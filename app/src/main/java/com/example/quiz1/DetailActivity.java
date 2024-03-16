@@ -85,7 +85,7 @@ public class DetailActivity extends AppCompatActivity{
         btnShare.setOnClickListener(click -> {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String shareMessage = detail.getNamaPelanggan() +
+            String shareMessage = tvSelamat.getText() +
                     "\n"+ tvTipeMember.getText() +
                     "\n" + tvKodeBarang.getText() +
                     "\n" + tvNamaBarang.getText() +
