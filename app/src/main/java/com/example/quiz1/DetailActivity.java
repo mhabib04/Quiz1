@@ -86,10 +86,10 @@ public class DetailActivity extends AppCompatActivity{
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             String shareMessage = detail.getNamaPelanggan() +
-                    "\n"+ detail.getTipeMember() +
-                    "\n" + detail.getKodeBarang() +
-                    "\n" + detail.getNamaBarang() +
-                    "\n" + detail.getHargaBarang() +
+                    "\n"+ tvTipeMember.getText() +
+                    "\n" + tvKodeBarang.getText() +
+                    "\n" + tvNamaBarang.getText() +
+                    "\n" + tvHargaBarang.getText() +
                     "\n" + tvDiskonHarga.getText() +
                     "\n" + tvDiskonMember.getText() +
                     "\n" + tvJumlahbayar.getText();
